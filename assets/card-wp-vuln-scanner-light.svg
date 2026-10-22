@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="210" viewBox="0 0 440 210">
+<rect x="0.5" y="0.5" width="439" height="209" rx="12" fill="#ffffff" stroke="#d1d9e0"/>
+<clipPath id="c"><rect x="0.5" y="0.5" width="439" height="209" rx="12"/></clipPath><rect clip-path="url(#c)" x="0" y="0" width="440" height="5" fill="#f85149"/>
+<circle cx="30" cy="38" r="5" fill="#f85149"/>
+<text x="44" y="43" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" font-weight="600" fill="#f85149" letter-spacing="0.6">SECURITY</text>
+<text x="24" y="80" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="22" font-weight="700" fill="#1f2328">wp-vuln-scanner</text>
+<text x="24" y="110" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="14.5" fill="#59636e">WordPress exposure scanner: fingerprints the stack,</text>
+<text x="24" y="131" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="14.5" fill="#59636e">maps versions to CVEs and writes an HTML risk</text>
+<text x="24" y="152" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="14.5" fill="#59636e">report.</text>
+<rect x="24" y="166" width="66" height="24" rx="12" fill="#f6f8fa" stroke="#d1d9e0"/>
+<text x="57" y="182" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" fill="#1f2328">Python</text>
+<rect x="97.6" y="166" width="43" height="24" rx="12" fill="#f6f8fa" stroke="#d1d9e0"/>
+<text x="119" y="182" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" fill="#1f2328">NVD</text>
+<rect x="148.39999999999998" y="166" width="50" height="24" rx="12" fill="#f6f8fa" stroke="#d1d9e0"/>
+<text x="174" y="182" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" fill="#1f2328">CVSS</text>
+</svg>
