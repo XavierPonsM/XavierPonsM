@@ -33,5 +33,3 @@ This profile is where I publish them. Some are polished, some are experiments �
 
 - **MSc Telecommunication Engineering** · Universitat Oberta de Catalunya · *in progress*
 - **BSc Telecommunications Engineering**, Audiovisual Systems · UPC – ETSETB · thesis on on-device AI, graded 9.5/10
-
-<sub>Always open to talk about security, embedded ML or a good side project.</sub>
