@@ -59,17 +59,15 @@ def banner(th):
 
 
 def contact(th):
-    c = THEMES[th]; W, H = 900, 120; a = c["accent"]
-    s = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}">',
-         f'<rect width="{W}" height="{H}" rx="18" fill="{c["bg"]}"/>',
-         # small "person + link" line-art glyph
-         f'<g transform="translate(30 28)" fill="none" stroke="{a}" stroke-width="2.2">'
-         f'<circle cx="32" cy="22" r="10"/><path d="M12 60 C 14 42, 50 42, 52 60"/></g>',
-         f'<text x="112" y="52" font-family="{MONO}" font-size="12.5" fill="{c["faint"]}">get in touch</text>',
-         f'<text x="112" y="84" font-family="{FONT}" font-size="22" font-weight="700" fill="{c["fg"]}">Let\'s connect on LinkedIn</text>',
-         f'<text x="{W-32}" y="76" text-anchor="end" font-family="{MONO}" font-size="15" fill="{a}">linkedin.com/in/xavier-pons-marti  →</text>',
-         '</svg>']
-    return "\n".join(s)
+    c = THEMES[th]; W, H = 300, 48; a = c["accent"]
+    return "\n".join([
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}">',
+        f'<rect width="{W}" height="{H}" rx="12" fill="{c["bg"]}"/>',
+        f'<g transform="translate(16 10)" fill="none" stroke="{a}" stroke-width="1.8">'
+        f'<circle cx="12" cy="8" r="5"/><path d="M2 27 C 3 18, 21 18, 22 27"/></g>',
+        f'<text x="50" y="30" font-family="{FONT}" font-size="15" font-weight="700" fill="{c["fg"]}">LinkedIn</text>',
+        f'<text x="{W-16}" y="30" text-anchor="end" font-family="{MONO}" font-size="12.5" fill="{a}">in/xavier-pons-marti →</text>',
+        '</svg>'])
 
 
 # ---- small line-art glyphs, one per project -------------------------------------------
@@ -164,7 +162,7 @@ def card(p, th):
 if __name__ == '__main__':
     for th in THEMES:
         open(f'{OUT}/header-{th}.svg', 'w').write(banner(th))
-        open(f'{OUT}/contact-{th}.svg', 'w').write(contact(th))
+        open(f'{OUT}/linkedin-{th}.svg', 'w').write(contact(th))
         for p in PROJECTS:
             open(f'{OUT}/card-{p[0]}-{th}.svg', 'w').write(card(p, th))
     print('ok')

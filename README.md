@@ -2,6 +2,8 @@
   <picture><source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg"><img src="assets/header-light.svg" alt="Xavier Pons Martí"></picture>
 </p>
 
+<a href="https://www.linkedin.com/in/xavier-pons-marti"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/linkedin-dark.svg"><img align="right" src="assets/linkedin-light.svg" alt="LinkedIn: in/xavier-pons-marti" width="250"></picture></a>
+
 ### Hi, I'm Xavi
 
 Telecommunications engineer from Menorca. By day I work in cybersecurity as a consultant and SOC analyst at EY; the rest of the time I like building things: security tools, small ML models that run on microcontrollers, data projects and apps I actually use.
@@ -31,9 +33,5 @@ This profile is where I publish them. Some are polished, some are experiments �
 
 - **MSc Telecommunication Engineering** · Universitat Oberta de Catalunya · *in progress*
 - **BSc Telecommunications Engineering**, Audiovisual Systems · UPC – ETSETB · thesis on on-device AI, graded 9.5/10
-
-### Get in touch
-
-<a href="https://www.linkedin.com/in/xavier-pons-marti"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/contact-dark.svg"><img src="assets/contact-light.svg" alt="LinkedIn: linkedin.com/in/xavier-pons-marti" width="100%"></picture></a>
 
 <sub>Always open to talk about security, embedded ML or a good side project.</sub>
