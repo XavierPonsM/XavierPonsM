@@ -21,7 +21,7 @@ Senior Cybersecurity Consultant at EY, working as a level-2 SOC analyst and on c
 | 🎙️ **[ges_iavoz](https://github.com/XavierPonsM/ges_iavoz)** | Bachelor's thesis: real-time keyword spotting on an ESP32-S3 — 97.2 % validation accuracy, 0.05 false positives/h, 299 ms inference | C/C++, ESP-IDF, TFLite Micro |
 | 🧠 **[tfg-kws-training](https://github.com/XavierPonsM/tfg-kws-training)** | Training pipeline for the thesis model: MobileNetV2 transfer learning + int8 quantization | Python, TensorFlow |
 | 🌫️ **[air-quality-forecasting](https://github.com/XavierPonsM/air-quality-forecasting)** | Team project backend: NO₂ forecasting with LSTMs and pollution-aware route planning on OpenStreetMap graphs, served as a REST API | Python, Keras, osmnx, Flask, Docker |
-| 💶 **[mi-cartera](https://github.com/XavierPonsM/mi-cartera)** | Offline-first personal finance PWA with bank-statement import and receipt OCR | JavaScript, Service Workers |
+| 💶 **[mi-cartera](https://github.com/XavierPonsM/mi-cartera)** | Offline-first personal finance PWA with bank-statement import and receipt OCR — [live demo](https://xavierponsm.github.io/mi-cartera/) | JavaScript, Service Workers |
 | 📈 **[matlab-signal-processing](https://github.com/XavierPonsM/matlab-signal-processing)** | Class-D amplifier simulation and sound-card THD / frequency-response measurements | MATLAB |
 
 ### Education
