@@ -21,19 +21,38 @@ def wave(x0, y0, w, amp, freq, phase=0, n=240):
     return "M" + " L".join(pts)
 
 
-def animated_wave(x0, y0, w, amp, freq, phase0, dur, colour, opacity):
-    frames = [wave(x0, y0, w, amp, freq, phase0 + 2 * math.pi * k / 16) for k in range(17)]
-    return (f'<path d="{frames[0]}" fill="none" stroke="{colour}" stroke-width="2" stroke-opacity="{opacity}">'
-            f'<animate attributeName="d" dur="{dur}s" repeatCount="indefinite" values="{";".join(frames)}"/></path>')
+def pulse_train(x0, y0, w, amp, period, env, n_per=24):
+    """AM signal: sine carrier (period px) under a sin^2 envelope repeating every `env` px.
+    Both are periodic in `env`, so translating by `env` loops seamlessly."""
+    n = int(w / period * n_per)
+    pts = []
+    for i in range(n + 1):
+        x = w * i / n
+        e = math.sin(math.pi * x / env) ** 2
+        pts.append(f"{x0 + x:.1f},{y0 + amp * e * math.sin(2 * math.pi * x / period):.1f}")
+    return "M" + " L".join(pts)
 
 
 def banner(th):
-    c = THEMES[th]; W, H = 1200, 260
-    s = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}">']
-    for i, (f, a, op, dur) in enumerate([(6, 70, .9, 3.2), (9, 42, .45, 2.3), (4, 90, .25, 4.6)]):
-        s.append(animated_wave(660, 130, 500, a, f, i * 1.1, dur, c["accent"], op))
+    # Waves are long periodic sines translated with a CSS animation (works in <img> on all browsers)
+    # and shaped by a static envelope mask, so they look like a travelling signal.
+    c = THEMES[th]; W, H = 1200, 260; X0, WW = 660, 500
+    ENV = 500
+    waves = [(80, 50, .9, 7), (48, 62.5, .45, 5), (95, 83.333, .25, 9)]  # amp, carrier period, opacity, seconds
+    s = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}">',
+         '<style>' + ''.join(f'@keyframes m{i}{{from{{transform:translateX(0)}}to{{transform:translateX(-{ENV}px)}}}}'
+                             f'.w{i}{{animation:m{i} {d}s linear infinite}}' for i, (_, p, _, d) in enumerate(waves)) + '</style>',
+         '<defs><linearGradient id="env" x1="0" x2="1">'
+         '<stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".2" stop-color="#fff" stop-opacity="1"/>'
+         '<stop offset=".8" stop-color="#fff" stop-opacity="1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>'
+         f'</linearGradient><mask id="m"><rect x="{X0}" y="0" width="{WW}" height="{H}" fill="url(#env)"/></mask></defs>',
+         '<g mask="url(#m)">']
+    for i, (amp, p, op, _) in enumerate(waves):
+        s.append(f'<path class="w{i}" d="{pulse_train(X0, 130, WW + ENV, amp, p, ENV)}" fill="none" stroke="{c["accent"]}" '
+                 f'stroke-width="2" stroke-opacity="{op}"/>')
+    s.append('</g>')
     s.append(f'<text x="40" y="112" font-family="{FONT}" font-size="54" font-weight="700" fill="{c["fg"]}">Xavier Pons Martí</text>')
-    s.append(f'<text x="42" y="156" font-family="{FONT}" font-size="22" fill="{c["muted"]}">Telecom engineer · security · things I build</text>')
+    s.append(f'<text x="42" y="156" font-family="{FONT}" font-size="22" fill="{c["muted"]}">Telecom engineer · Cybersecurity</text>')
     s.append(f'<text x="42" y="198" font-family="{MONO}" font-size="16" fill="{c["accent"]}">~/menorca $ ./portfolio --latest</text>')
     s.append('</svg>')
     return "\n".join(s)
@@ -144,7 +163,7 @@ def card(p, th):
 
 if __name__ == '__main__':
     for th in THEMES:
-        open(f'{OUT}/banner-{th}.svg', 'w').write(banner(th))
+        open(f'{OUT}/header-{th}.svg', 'w').write(banner(th))
         open(f'{OUT}/contact-{th}.svg', 'w').write(contact(th))
         for p in PROJECTS:
             open(f'{OUT}/card-{p[0]}-{th}.svg', 'w').write(card(p, th))
