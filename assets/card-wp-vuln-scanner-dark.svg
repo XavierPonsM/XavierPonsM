@@ -1,16 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="440" height="210" viewBox="0 0 440 210">
-<rect x="0.5" y="0.5" width="439" height="209" rx="12" fill="#0d1117" stroke="#30363d"/>
-<clipPath id="c"><rect x="0.5" y="0.5" width="439" height="209" rx="12"/></clipPath><rect clip-path="url(#c)" x="0" y="0" width="440" height="5" fill="#f85149"/>
-<circle cx="30" cy="38" r="5" fill="#f85149"/>
-<text x="44" y="43" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" font-weight="600" fill="#f85149" letter-spacing="0.6">SECURITY</text>
-<text x="24" y="80" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="22" font-weight="700" fill="#e6edf3">wp-vuln-scanner</text>
-<text x="24" y="110" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="14.5" fill="#9198a1">WordPress exposure scanner: fingerprints the stack,</text>
-<text x="24" y="131" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="14.5" fill="#9198a1">maps versions to CVEs and writes an HTML risk</text>
-<text x="24" y="152" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="14.5" fill="#9198a1">report.</text>
-<rect x="24" y="166" width="66" height="24" rx="12" fill="#161b22" stroke="#30363d"/>
-<text x="57" y="182" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" fill="#e6edf3">Python</text>
-<rect x="97.6" y="166" width="43" height="24" rx="12" fill="#161b22" stroke="#30363d"/>
-<text x="119" y="182" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" fill="#e6edf3">NVD</text>
-<rect x="148.39999999999998" y="166" width="50" height="24" rx="12" fill="#161b22" stroke="#30363d"/>
-<text x="174" y="182" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" fill="#e6edf3">CVSS</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="200" viewBox="0 0 440 200">
+<rect width="440" height="200" rx="18" fill="#161b22"/>
+<g transform="translate(352 24)"><g fill="none" stroke="#4493f8" stroke-width="2"><circle cx="32" cy="32" r="26" stroke-opacity=".3"/><circle cx="32" cy="32" r="17" stroke-opacity=".55"/><circle cx="32" cy="32" r="8"/><path d="M32 32 L52 14"/></g><circle cx="47" cy="22" r="3.5" fill="#4493f8"/></g>
+<text x="28" y="44" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12.5" fill="#6e7681">security</text>
+<text x="28" y="78" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="22" font-weight="700" fill="#e6edf3">wp-vuln-scanner</text>
+<text x="28" y="108" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="14.5" fill="#9198a1">WordPress exposure scanner: fingerprints the</text>
+<text x="28" y="129" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="14.5" fill="#9198a1">stack, maps versions to CVEs and writes an HTML</text>
+<text x="28" y="150" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="14.5" fill="#9198a1">risk report.</text>
+<text x="28" y="176" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12.5" fill="#4493f8">Python  ·  NVD  ·  CVSS</text>
 </svg>

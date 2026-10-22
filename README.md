@@ -4,17 +4,20 @@
 
 ### Hi, I'm Xavi
 
-Telecommunications engineer from Barcelona. By day I work in cybersecurity as a consultant and SOC analyst at EY; the rest of the time I like building things: security tools, small ML models that run on microcontrollers, data projects and apps I actually use.
+Telecommunications engineer from Menorca. By day I work in cybersecurity as a consultant and SOC analyst at EY; the rest of the time I like building things: security tools, small ML models that run on microcontrollers, data projects and apps I actually use.
 
 This profile is where I publish them. Some are polished, some are experiments — new things land here as I make them.
 
 ### Projects
 
-<table>
-<tr><td width="50%"><a href="https://github.com/XavierPonsM/wp-vuln-scanner"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-wp-vuln-scanner-dark.svg"><img src="assets/card-wp-vuln-scanner-light.svg" alt="wp-vuln-scanner"></picture></a></td><td width="50%"><a href="https://github.com/XavierPonsM/ges_iavoz"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-ges_iavoz-dark.svg"><img src="assets/card-ges_iavoz-light.svg" alt="ges_iavoz"></picture></a></td></tr>
-<tr><td width="50%"><a href="https://github.com/XavierPonsM/tfg-kws-training"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-tfg-kws-training-dark.svg"><img src="assets/card-tfg-kws-training-light.svg" alt="tfg-kws-training"></picture></a></td><td width="50%"><a href="https://github.com/XavierPonsM/air-quality-forecasting"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-air-quality-forecasting-dark.svg"><img src="assets/card-air-quality-forecasting-light.svg" alt="air-quality-forecasting"></picture></a></td></tr>
-<tr><td width="50%"><a href="https://github.com/XavierPonsM/mi-cartera"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-mi-cartera-dark.svg"><img src="assets/card-mi-cartera-light.svg" alt="mi-cartera"></picture></a></td><td width="50%"><a href="https://github.com/XavierPonsM/matlab-signal-processing"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-matlab-signal-processing-dark.svg"><img src="assets/card-matlab-signal-processing-light.svg" alt="matlab-signal-processing"></picture></a></td></tr>
-</table>
+<p>
+<a href="https://github.com/XavierPonsM/wp-vuln-scanner"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-wp-vuln-scanner-dark.svg"><img src="assets/card-wp-vuln-scanner-light.svg" alt="wp-vuln-scanner" width="49%"></picture></a>
+<a href="https://github.com/XavierPonsM/ges_iavoz"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-ges_iavoz-dark.svg"><img src="assets/card-ges_iavoz-light.svg" alt="ges_iavoz" width="49%"></picture></a><br><br>
+<a href="https://github.com/XavierPonsM/tfg-kws-training"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-tfg-kws-training-dark.svg"><img src="assets/card-tfg-kws-training-light.svg" alt="tfg-kws-training" width="49%"></picture></a>
+<a href="https://github.com/XavierPonsM/air-quality-forecasting"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-air-quality-forecasting-dark.svg"><img src="assets/card-air-quality-forecasting-light.svg" alt="air-quality-forecasting" width="49%"></picture></a><br><br>
+<a href="https://github.com/XavierPonsM/mi-cartera"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-mi-cartera-dark.svg"><img src="assets/card-mi-cartera-light.svg" alt="mi-cartera" width="49%"></picture></a>
+<a href="https://github.com/XavierPonsM/matlab-signal-processing"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-matlab-signal-processing-dark.svg"><img src="assets/card-matlab-signal-processing-light.svg" alt="matlab-signal-processing" width="49%"></picture></a><br><br>
+</p>
 
 ### Toolbox
 

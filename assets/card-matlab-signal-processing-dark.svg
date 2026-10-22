@@ -1,11 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="440" height="210" viewBox="0 0 440 210">
-<rect x="0.5" y="0.5" width="439" height="209" rx="12" fill="#0d1117" stroke="#30363d"/>
-<clipPath id="c"><rect x="0.5" y="0.5" width="439" height="209" rx="12"/></clipPath><rect clip-path="url(#c)" x="0" y="0" width="440" height="5" fill="#db61a2"/>
-<circle cx="30" cy="38" r="5" fill="#db61a2"/>
-<text x="44" y="43" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" font-weight="600" fill="#db61a2" letter-spacing="0.6">SIGNAL PROCESSING</text>
-<text x="24" y="80" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="22" font-weight="700" fill="#e6edf3">matlab-signal-processing</text>
-<text x="24" y="110" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="14.5" fill="#9198a1">Class-D amplifier simulation and sound-card</text>
-<text x="24" y="131" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="14.5" fill="#9198a1">distortion and frequency-response measurements.</text>
-<rect x="24" y="166" width="66" height="24" rx="12" fill="#161b22" stroke="#30363d"/>
-<text x="57" y="182" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" fill="#e6edf3">MATLAB</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="200" viewBox="0 0 440 200">
+<rect width="440" height="200" rx="18" fill="#161b22"/>
+<g transform="translate(352 24)"><path d="M4 46 H12 V18 H20 V46 H24 V18 H36 V46 H40 V18 H44 V46 H52 V18 H60" fill="none" stroke="#4493f8" stroke-opacity=".35" stroke-width="1.8"/><path d="M4 32 L6 29.3 L8 26.8 L10 24.5 L12 22.6 L14 21.2 L16 20.3 L18 20.0 L20 20.3 L22 21.2 L24 22.6 L26 24.5 L28 26.8 L30 29.3 L32 32.0 L34 34.7 L36 37.2 L38 39.5 L40 41.4 L42 42.8 L44 43.7 L46 44.0 L48 43.7 L50 42.8 L52 41.4 L54 39.5 L56 37.2 L58 34.7 L60 32.0" fill="none" stroke="#4493f8" stroke-width="2.5"/></g>
+<text x="28" y="44" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12.5" fill="#6e7681">signal processing</text>
+<text x="28" y="78" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="22" font-weight="700" fill="#e6edf3">matlab-signal-processing</text>
+<text x="28" y="108" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="14.5" fill="#9198a1">Class-D amplifier simulation and sound-card</text>
+<text x="28" y="129" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="14.5" fill="#9198a1">distortion and frequency-response measurements.</text>
+<text x="28" y="176" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12.5" fill="#4493f8">MATLAB</text>
 </svg>
