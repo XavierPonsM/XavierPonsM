@@ -8,7 +8,7 @@ Senior Cybersecurity Consultant at EY, working as a level-2 SOC analyst and on c
 
 | | |
 |---|---|
-| **Security operations** | Splunk (SPL, dashboards, detections), CrowdStrike Falcon, Netskope, SOAR playbooks, incident response |
+| **Security operations** | Splunk (SPL, dashboards, detections), CrowdStrike, Netskope, SOAR playbooks, incident response |
 | **Programming** | Python (automation, data pipelines, tooling), JavaScript, C/C++ for embedded, MATLAB |
 | **Data & ML** | TensorFlow / Keras, TFLite Micro, pandas, scikit-learn |
 | **Infra** | Linux, Docker, PostgreSQL, Flask, Git |
