@@ -21,16 +21,35 @@ def wave(x0, y0, w, amp, freq, phase=0, n=240):
     return "M" + " L".join(pts)
 
 
+def animated_wave(x0, y0, w, amp, freq, phase0, dur, colour, opacity):
+    frames = [wave(x0, y0, w, amp, freq, phase0 + 2 * math.pi * k / 16) for k in range(17)]
+    return (f'<path d="{frames[0]}" fill="none" stroke="{colour}" stroke-width="2" stroke-opacity="{opacity}">'
+            f'<animate attributeName="d" dur="{dur}s" repeatCount="indefinite" values="{";".join(frames)}"/></path>')
+
+
 def banner(th):
     c = THEMES[th]; W, H = 1200, 260
     s = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}">']
-    for i, (f, a, op) in enumerate([(6, 70, .9), (9, 42, .45), (4, 90, .25)]):
-        s.append(f'<path d="{wave(660, 130, 500, a, f, i * 1.1)}" fill="none" stroke="{c["accent"]}" '
-                 f'stroke-width="2" stroke-opacity="{op}"/>')
+    for i, (f, a, op, dur) in enumerate([(6, 70, .9, 3.2), (9, 42, .45, 2.3), (4, 90, .25, 4.6)]):
+        s.append(animated_wave(660, 130, 500, a, f, i * 1.1, dur, c["accent"], op))
     s.append(f'<text x="40" y="112" font-family="{FONT}" font-size="54" font-weight="700" fill="{c["fg"]}">Xavier Pons Martí</text>')
     s.append(f'<text x="42" y="156" font-family="{FONT}" font-size="22" fill="{c["muted"]}">Telecom engineer · security · things I build</text>')
     s.append(f'<text x="42" y="198" font-family="{MONO}" font-size="16" fill="{c["accent"]}">~/menorca $ ./portfolio --latest</text>')
     s.append('</svg>')
+    return "\n".join(s)
+
+
+def contact(th):
+    c = THEMES[th]; W, H = 900, 120; a = c["accent"]
+    s = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}">',
+         f'<rect width="{W}" height="{H}" rx="18" fill="{c["bg"]}"/>',
+         # small "person + link" line-art glyph
+         f'<g transform="translate(30 28)" fill="none" stroke="{a}" stroke-width="2.2">'
+         f'<circle cx="32" cy="22" r="10"/><path d="M12 60 C 14 42, 50 42, 52 60"/></g>',
+         f'<text x="112" y="52" font-family="{MONO}" font-size="12.5" fill="{c["faint"]}">get in touch</text>',
+         f'<text x="112" y="84" font-family="{FONT}" font-size="22" font-weight="700" fill="{c["fg"]}">Let\'s connect on LinkedIn</text>',
+         f'<text x="{W-32}" y="76" text-anchor="end" font-family="{MONO}" font-size="15" fill="{a}">linkedin.com/in/xavier-pons-marti  →</text>',
+         '</svg>']
     return "\n".join(s)
 
 
@@ -126,6 +145,7 @@ def card(p, th):
 if __name__ == '__main__':
     for th in THEMES:
         open(f'{OUT}/banner-{th}.svg', 'w').write(banner(th))
+        open(f'{OUT}/contact-{th}.svg', 'w').write(contact(th))
         for p in PROJECTS:
             open(f'{OUT}/card-{p[0]}-{th}.svg', 'w').write(card(p, th))
     print('ok')

@@ -32,4 +32,8 @@ This profile is where I publish them. Some are polished, some are experiments �
 - **MSc Telecommunication Engineering** · Universitat Oberta de Catalunya · *in progress*
 - **BSc Telecommunications Engineering**, Audiovisual Systems · UPC – ETSETB · thesis on on-device AI, graded 9.5/10
 
+### Get in touch
+
+<a href="https://www.linkedin.com/in/xavier-pons-marti"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/contact-dark.svg"><img src="assets/contact-light.svg" alt="LinkedIn: linkedin.com/in/xavier-pons-marti" width="100%"></picture></a>
+
 <sub>Always open to talk about security, embedded ML or a good side project.</sub>
